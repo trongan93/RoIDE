@@ -35,13 +35,13 @@ import wandb
 # start a new wandb run to track this script
 wandb.init(
     # set the wandb project where this run will be logged
-    project="HDRNet",
+    project="RoIDE-Net",
     mode="online", # mode: online, disabled
     # track hyperparameters and run metadata
     config={
         "learning_rate": 0.02,
-        "architecture": "HDRNet",
-        "dataset": "LDR-satellite",
+        "architecture": "RoIDE-Net",
+        "dataset": "SDR-satellite",
         "epochs": 5,
     }
 )
@@ -180,12 +180,12 @@ def train(config):
         # torch.autograd.set_detect_anomaly(False)  # Disable anomaly detection after training
 
         if ((epoch + 1) % 10) == 0:
-            print("Saving Model " + config.snapshots_folder + "HDR_net_Epoch" + str((epoch + 1)) + '.pth' + " with Epoch " + str((epoch + 1)))
-            torch.save(HDR_net.state_dict(), config.snapshots_folder + "HDR_net_Epoch" + str((epoch + 1)) + '.pth')
+            print("Saving Model " + config.snapshots_folder + "RoIDE-Net_HDR_net_Epoch" + str((epoch + 1)) + '.pth' + " with Epoch " + str((epoch + 1)))
+            torch.save(HDR_net.state_dict(), config.snapshots_folder + "RoIDE-Net_HDR_net_Epoch" + str((epoch + 1)) + '.pth')
 
-            print("Saving Model " + config.snapshots_folder + "Fusion_net_Epoch" + str(
+            print("Saving Model " + config.snapshots_folder + "RoIDE-Net_Fusion_net_Epoch" + str(
                 (epoch + 1)) + '.pth' + " with Epoch " + str((epoch + 1)))
-            torch.save(Fusion_net.state_dict(), config.snapshots_folder + "Fusion_net_Epoch" + str((epoch + 1)) + '.pth')
+            torch.save(Fusion_net.state_dict(), config.snapshots_folder + "RoIDE-Net_Fusion_net_Epoch" + str((epoch + 1)) + '.pth')
 
             print("Model Saved\n\n")
 
@@ -196,7 +196,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Input Parameters
-    parser.add_argument('--lowlight_images_path', type=str, default="/mnt/d/ZeroDCEDataSet/ZeroDCE/satellite_ldr_imgs/")
+    parser.add_argument('--ldr_images_path', type=str, default="/satellite_ldr_imgs/")
     # local trongan lab pc: /mnt/d/ZeroDCEDataSet/ZeroDCE/satellite_ldr_imgs/
     # server 38 : /mnt/d/satellite_ldr_imgs/
     parser.add_argument('--lr', type=float, default=0.0001)
@@ -209,7 +209,7 @@ if __name__ == "__main__":
     parser.add_argument('--display_iter', type=int, default=10)
     parser.add_argument('--snapshot_iter', type=int, default=10)
     parser.add_argument('--scale_factor', type=int, default=1)
-    parser.add_argument('--snapshots_folder', type=str, default="./snapshots_weight_trongan93_HDRNet_8_inter/")
+    parser.add_argument('--snapshots_folder', type=str, default="./snapshots_weight_trongan93_RoIDE-Net_8_inter/")
     parser.add_argument('--load_pretrain', type=bool, default= False)
     # parser.add_argument('--pretrain_dir', type=str, default= "./snapshots_weight_trongan93/Epoch99.pth") #Need change the model path
     # parser.add_argument("--gpu_devices", type=int, nargs='+', default=None, help="")
