@@ -82,7 +82,7 @@ def train(config):
 
     # Define train model
     HDR_net.train()
-    Fusion_net.train() #TODO: new Fusion model
+    Fusion_net.train()
 
     # torch.autograd.set_detect_anomaly(True)  # Enable anomaly detection
 
@@ -106,7 +106,6 @@ def train(config):
             x_medium_integrated = x4
             x_max_integrated = x8
 
-            # TODO: continue work here for HDR Loss function
             loss_tv_noweight = L_TV(x_r)
             Loss_TV = 7000 * loss_tv_noweight
             wandb.log({"loss_tv_noweight": loss_tv_noweight, 'epoch': epoch})
@@ -143,8 +142,8 @@ def train(config):
             x_integrated_medium_deatach = x_medium_integrated.detach()
             x_integrated_max_deatach = x_max_integrated.detach()
 
-            fused_result = Fusion_net(x_integrated_min_deatach, x_integrated_max_deatach) # TODO: new Fusion model
-            # loss_col_2 = torch.mean(L_color(fusion_net_result)) #TODO: new Fusion model
+            fused_result = Fusion_net(x_integrated_min_deatach, x_integrated_max_deatach)
+            # loss_col_2 = torch.mean(L_color(fusion_net_result))
             loss_total, loss_intensity, loss_grad, loss_ssim= fusion_loss.Fusion_loss(x_integrated_min_deatach,x_integrated_max_deatach,fused_result)
 
             wandb.log({"loss_fusion_net_intensity": loss_intensity, 'epoch': epoch})
@@ -206,10 +205,10 @@ if __name__ == "__main__":
     parser.add_argument('--num_workers', type=int, default=16)
     parser.add_argument('--display_iter', type=int, default=10)
     parser.add_argument('--snapshot_iter', type=int, default=10)
-    parser.add_argument('--scale_factor', type=int, default=1) # TODO: check differeces if applied
+    parser.add_argument('--scale_factor', type=int, default=1)
     parser.add_argument('--snapshots_folder', type=str, default="./snapshots_weight_trongan93_HDRNet_8_inter/")
     parser.add_argument('--load_pretrain', type=bool, default= False)
-    # parser.add_argument('--pretrain_dir', type=str, default= "./snapshots_weight_trongan93/Epoch99.pth") # TODO: Need change the model path
+    # parser.add_argument('--pretrain_dir', type=str, default= "./snapshots_weight_trongan93/Epoch99.pth") #Need change the model path
     # parser.add_argument("--gpu_devices", type=int, nargs='+', default=None, help="")
     config = parser.parse_args()
 
