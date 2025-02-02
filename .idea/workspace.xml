@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41705554-c618-4f6d-811d-3d010ff7189a" name="Changes" comment="RoIDE model updated">
+    <list default="true" id="41705554-c618-4f6d-811d-3d010ff7189a" name="Changes" comment="RoIDE evaluation factors">
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_exposure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_exposure_colorfullness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_fusion_attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_fusion_attention_metric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_hdr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_module_MEG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_multi_exposure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluation/evaluation_spectral.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/trongan93/Projects/RoIDE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/trongan93/Projects/RoIDE/evaluation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/evaluation" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -75,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738468752638</updated>
       <workItem from="1738468753685" duration="1125000" />
-      <workItem from="1738469886324" duration="1227000" />
+      <workItem from="1738469886324" duration="1563000" />
     </task>
     <task id="LOCAL-00001" summary="RoIDE model">
       <option name="closed" value="true" />
@@ -157,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738470992301</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="RoIDE model updated">
+      <option name="closed" value="true" />
+      <created>1738471216827</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738471216827</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RoIDE model" />
     <MESSAGE value="RoIDE model updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="RoIDE model updated" />
+    <MESSAGE value="RoIDE evaluation factors" />
+    <option name="LAST_COMMIT_MESSAGE" value="RoIDE evaluation factors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
