@@ -1,5 +1,8 @@
 # Andrew Bui
+# National Taipei University of Technology
 # Updated in 1/2025
+# trongan93@ntut.edu.tw
+
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "1" # remember to set 1 when runing on server 38
