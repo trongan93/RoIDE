@@ -1,12 +1,14 @@
+# Andrew Bui
+# National Taipei University of Technology
+# Updated in 1/2025
+# trongan93@ntut.edu.tw
+
 import torch
 import torch.nn as nn
 import wandb
 
 
 class Fusion_module(nn.Module):
-    '''
-    Fusion_Module reference from: https://github.com/Linfeng-Tang/PSFusion/blob/main/PSF.py#L348
-    '''
 
     def __init__(self, channels=3, r=2):
         super(Fusion_module, self).__init__()
@@ -80,6 +82,7 @@ def double_conv(in_channels, out_channels):
         nn.Conv2d(out_channels, out_channels, 3, padding=1),
         nn.ReLU(inplace=True)
     )
+# Fusion_Module reference from: https://github.com/Linfeng-Tang/PSFusion/blob/main/PSF.py#L348
 
 
 class UNet(nn.Module):
@@ -143,6 +146,3 @@ class UNet(nn.Module):
         # wandb.log({"enhanced_3_channels by UNet": enhanced_3_channels_by_unet})
 
         return out
-
-# Continue research on the source code: https://github.com/chxy95/HDRUNet/blob/main/codes/models/modules/UNet_arch.py#L21
-# Check the Fusion module: https://github.com/Linfeng-Tang/PSFusion/blob/main/PSF.py#L405

@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41705554-c618-4f6d-811d-3d010ff7189a" name="Changes" comment="RoIDE model">
-      <change afterPath="$PROJECT_DIR$/Myloss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataloader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fusenet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fusion_loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+    <list default="true" id="41705554-c618-4f6d-811d-3d010ff7189a" name="Changes" comment="RoIDE model updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Myloss.py" beforeDir="false" afterPath="$PROJECT_DIR$/Myloss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fusenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/fusenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fusion_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/fusion_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -86,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738468752638</updated>
       <workItem from="1738468753685" duration="1125000" />
-      <workItem from="1738469886324" duration="438000" />
+      <workItem from="1738469886324" duration="654000" />
     </task>
     <task id="LOCAL-00001" summary="RoIDE model">
       <option name="closed" value="true" />
@@ -144,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738470231322</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="RoIDE model updated">
+      <option name="closed" value="true" />
+      <created>1738470349884</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738470349884</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +153,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RoIDE model" />
-    <option name="LAST_COMMIT_MESSAGE" value="RoIDE model" />
+    <MESSAGE value="RoIDE model updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="RoIDE model updated" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Myloss.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

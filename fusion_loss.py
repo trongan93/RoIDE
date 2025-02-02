@@ -1,10 +1,13 @@
+# Andrew Bui
+# National Taipei University of Technology
+# Updated in 1/2025
+# trongan93@ntut.edu.tw
+
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
 from math import exp
 import torchvision.transforms as transforms
-
-# Ref: https://github.com/Linfeng-Tang/PSFusion/blob/main/Fusion_losses.py
 
 def Fusion_loss(rgb_1, rgb_2, fu, weights=[1, 10, 10]):
 
@@ -188,3 +191,5 @@ def RGB2YCrCb(rgb_image):
     Cr = Cr.clamp(0.0,1.0).detach()
     Cb = Cb.clamp(0.0,1.0).detach()
     return Y, Cb, Cr
+
+# Ref: https://github.com/Linfeng-Tang/PSFusion/blob/main/Fusion_losses.py

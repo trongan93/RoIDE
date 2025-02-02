@@ -1,3 +1,8 @@
+# Andrew Bui
+# National Taipei University of Technology
+# Updated in 1/2025
+# trongan93@ntut.edu.tw
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
