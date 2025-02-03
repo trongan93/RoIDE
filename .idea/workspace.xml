@@ -75,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738468752638</updated>
       <workItem from="1738468753685" duration="1125000" />
-      <workItem from="1738469886324" duration="3609000" />
+      <workItem from="1738469886324" duration="4874000" />
     </task>
     <task id="LOCAL-00001" summary="RoIDE model">
       <option name="closed" value="true" />
@@ -189,11 +189,30 @@
       <option name="project" value="LOCAL" />
       <updated>1738474812149</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="RoIDE evaluation factors">
+      <option name="closed" value="true" />
+      <created>1738478471818</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738478471818</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="RoIDE model" />
